@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()">
+<!-- <form (ngSubmit)="onSubmit()">
 
     <div class="form-group">
         <label for="nome">Nome</label>
@@ -14,4 +14,42 @@
         Salvar
     </button>
 
+</form> -->
+
+<p-card>
+    <div style="
+    min-height: 76vh;
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+  ">
+
+<form class="" (ngSubmit)="onSubmit()">
+    <div class="formgrid grid" style="width: 100%">
+
+        <div class="field col-2">
+            <label for="username1" class="block">Nome</label>
+            <input [(ngModel)]="contato.nome" name="nome" id="username1" type="username" aria-describedby="username1-help" pInputText  />
+            <small id="username1-help" class="block">Enter your username to reset your password.</small>
+        </div>
+
+        <div class="field col-2">
+            <label for="username1" class="block">Telefone</label>
+            <input [(ngModel)]="contato.telefone"  name="telefone"  pInputText  />
+            <small id="username1-help" class="block">Enter your username to reset your password.</small>
+        </div>
+        
+
+    </div>
+    
 </form>
+
+
+</div>
+
+    <div class="footer">
+        <p-button type="submit" (onClick)="onSubmit()"
+        label="Click" icon="fas fas fa-save" >
+      </p-button>
+    </div>
+</p-card>
