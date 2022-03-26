@@ -13,6 +13,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 
 import { FormsModule } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
+    SharedModule,
 
   ],
   providers: [],
