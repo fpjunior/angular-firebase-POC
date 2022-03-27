@@ -1,0 +1,7 @@
+:host ::ng-deep {
+  .is-menu-open {
+    width: 100%;
+    opacity: 1;
+    z-index: 12000;
+}
+}

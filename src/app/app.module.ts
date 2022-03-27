@@ -11,17 +11,22 @@ import { ListComponent } from './contatos/list/list.component';
 import { AngularFireDatabaseModule, USE_EMULATOR as USE_DATABASE_EMULATOR } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
 
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from "./shared/shared.module";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditComponent,
-    ListComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
